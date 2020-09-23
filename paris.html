@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<title>Paris was Jerusalem</title>
+<h1 id="d">Paris was Jerusalem<br>Press any key to next slide, &larr; to previous<br>Press F11 to full screen 1920 1080</h1>
+<script>
+m=20;for(a=0;a<=m;a++)document.write('<img id=i'+a+' src="paris/paris ('+a+').png" style="position:absolute;top:0;left:0;display:none">');c=-1;
+window.onclick=document.onkeydown=function(e){b=e&&e.keyCode==37;c+=b?-1:1;c=c<0?0:c;c=c>m?m:c;document.getElementById("i"+(c+(b?1:0))).style.display=b?"none":"block";d.style.display="none";}
+</script>
+</html>
